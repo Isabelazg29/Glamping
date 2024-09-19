@@ -59,7 +59,10 @@
                         <th> Numero persona</th >
                         <th>Total </th  >
                         <th>pago anticipado</th  >
-                        <th>Operaciones</th >    
+                            <th>Cantidad restante</th>
+                            <th>Cambio de estado</th>    
+                        <th>Operaciones</th > 
+                              
                     </tr>
                 </thead>
                 <tr>
@@ -72,7 +75,16 @@
                     <td>2/08/2024</td>
                     <td>20</td>
                     <td>$5.000.000</td>
-                    <td>3.000.000</td>
+                    <td>$3.000.000</td>
+                    <td>$2.000.000
+                    </td>
+                    <td><select name="" id="">
+                        <option value="confirmado">confirmado</option>
+                        <option value="confirmado">por confirmar </option>
+                        <option value="confirmado">revervado</option>
+                        <option value="confirmado">anulado</option>
+                        <option value="confirmado">cancelado</option>
+                    </select></td>
                     <td><a href="editar.html"><i class="fas fa-edit" ></i></a></td>
                 </tr>
                 <tbody id="rolesTableBody">
@@ -112,7 +124,7 @@
                     <td id="montoR-1">70000</td>
                     <td id="reserva-1">5</td>
                     <td>
-                        <a href="#" onclick="openViewModal(1)"> <i class="fa-solid fa-plus"></i></a>
+                        <a href="#" onclick="openViewModal(1)"> <i class="fa-solid fa-file"></i></a>
                     </td>
                    </tr>
                 </thead>
