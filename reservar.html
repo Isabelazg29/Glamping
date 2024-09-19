@@ -18,7 +18,10 @@
                 <div class="container2">
                     <div class="form-row">
                         <div class="form-group">
-                            
+                            <div class="search-bar">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" placeholder="Buscar clientes" id="searchRoleInput">
+                                <button><i class="fas fa-search"></i></button>
+                            </div>   
                             <label for="">Nombre</label>&nbsp;&nbsp;&nbsp;
                             <input type="text" required><br>
                             <label for="">Apellido</label>&nbsp;&nbsp;&nbsp;
@@ -148,7 +151,30 @@
                                     </label>
                                 </div>
                              </div>
-                    </div>     
+                            
+                    </div>  
+                    <div class="form-group">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>idservicio</th >
+                                    <th>Nombre servicio</th >
+                                    <th>precio</th >
+                                
+                                          
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td>1</td>
+                                <td>Pesca deportiva</td>
+                                <td>100.000</td>
+                             
+                            </tr>
+                            <tbody id="rolesTableBody">
+                                
+                            </tbody>
+                        </table>
+                    </div>   
                 </div>
                 </div>
                 
@@ -158,32 +184,77 @@
                 
                 <div class="form-row">
                         
-                    <div class="form-group">
-                     <label for="">Nombre:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                     <input type="search"><br>
-                     <label for="">Descipcion:</label>
-                     <input type=""><br>
-                     <label for="">Cantidad de paquetes:</label>
-                     <select name="" id="">
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                        <option value="">5</option>
-
-                     </select>
-                     </div>
-                    <div class="form-group">
-                      <label for="">idpaquete:</label>
-                      <input type="number"><br>
-                      <label for="">Precio:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      <input type="text"><br>
-                      <label for="">Total:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      <input type="number">
-                     </div>
-              
+                    <div class="form-row">
+                        <div class="form-group">
+                            <div class="permission-item">
+                                <span>Paquete 1</span>
+                                <label class="switch">
+                                    <input type="checkbox" name="dashboard">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="permission-item">
+                                <span>paquete 2</span>
+                                <label class="switch">
+                                    <input type="checkbox" name="roles">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="permission-item">
+                                <span>paquete 3</span>
+                                <label class="switch">
+                                    <input type="checkbox" name="usuarios">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+                         <div class="form-group">
+                            <div class="permission-item">
+                                <span>paquete 4</span>
+                                <label class="switch">
+                                    <input type="checkbox" name="habitaciones">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="permission-item">
+                                <span>paquete 5 </span>
+                                <label class="switch">
+                                    <input type="checkbox" name="servicios">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="permission-item">
+                                <span>paquete 6</span>
+                                <label class="switch">
+                                    <input type="checkbox" name="paquetes">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                         </div>
+                         <div class="form-group">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>idspaquete</th >
+                                        <th>Nombre paquete</th >
+                                        <th>precio</th >
+                                    
+                                              
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Paquete 1</td>
+                                    <td>500.000</td>
+                                 
+                                </tr>
+                                <tbody id="rolesTableBody">
+                                    
+                                </tbody>
+                            </table>
+                        </div>   
+                    </div>
                 </div>
-               
             </div>
             <div class="container3">
                <div class="form-row">
@@ -195,18 +266,18 @@
                         <option value="">cuadruple</option>
                     </select><br>
                     <label for=""> Cantidad  permitida:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <input type="number"><br>
+                    <input type="number" value="1" disabled><br>
                     <label for="">Cantidad de habitaciones:</label>
-                    <input type="number" >
+                    <input type="number" value="5" disabled >
                      
                    </div>
                    <div class="form-group"> 
                         <label for="">Cantidad de personas</label>
-                        <input type="number"><br>
+                        <input type="number" value="5" disabled  > <br>
                         <label for="">Precio</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <input type="number"><br>
+                        <input type="number" value="1000000" disabled><br>
                         <label for="Total">Total</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <input type="number">
+                        <input type="number"  value="5000000" disabled>
                    </div>
                  
                </div>
@@ -216,28 +287,27 @@
                 <div class="container4">
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="">Numero reserva</label>&nbsp;&nbsp;
-                            <input type="number" name="" id=""><br>
+                         
                             <label for="">Fecha inicio</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             <input type="date" name="" id=""><br>
-                            <label for="">numero personas</label>
-                            <input type="number"><br>
+                            
                             <label for="">Total</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <input type="number"><br>
+                            <input type="number" value="5000000" disabled ><br>
                             <label for="">Pago anticipado</label>&nbsp;&nbsp;
-                            <input type="number">
+                            <input type="number"><br>
+                            
                         </div>
                         <div class="form-group">
-                            <label for="">Fecha reserva</label>
-                            <input type="date"><br>
+                         
                             <label for="">Fecha inicio</label>  &nbsp;&nbsp;&nbsp;
                             <input type="date"><br>
                             <label for="">Pago</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             <select name="" id="" >
-                                <option value=""></option>
+                                
                                 <option value="completo">Completo</option>
                                 <option value="abono">Abono</option>
                             </select><br>
+                            
                             <label for="">Comprobante</label>&nbsp;&nbsp;
                             <input type="file">
                               
